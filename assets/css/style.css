@@ -1,0 +1,44 @@
+.jumbotron {
+    background-color: #CC8B16;
+}
+
+#restart-button {
+    display: none;
+}
+
+.container {
+    background-color:  #A1B848;
+}
+
+#score-row-1 .col-md-4 {
+    margin: 2rem auto;
+}
+
+#score-row-2 .col-md-4 {
+    margin: 2rem auto;
+}
+
+#que-row {
+    padding-top: 3em;
+    padding-left: 2rem;
+    margin: 2rem auto;
+}
+
+#ans-row {
+    text-align: center;
+    padding-left: 3rem;
+}
+
+#message-row{
+    display: none;
+    margin: 2rem auto;
+    padding-bottom: 10em;
+}
+
+#footer {
+    background: #79B848;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    padding: 2em;
+}

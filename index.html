@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+</head>
+<body>
+    <div class="header">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Friend!</h1>
+            <p class="lead">Welcome to the baseball trivia question page!</p>
+            <hr class="my-4">
+            <p>You will be asked few questions about baseball game and If you answer correctly, You will score runs! If your answer is wrong, It's a strike! Three strikes and you are out! Be alert for the curve balls coming your way! Click on Play button and get started!</p>
+            <a class="btn btn-primary btn-lg" href="#container" role="button" id="play-button">Play!</a>
+            <a class="btn btn-primary btn-lg" href="#container" role="button" id="restart-button">Restart!</a>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="row" id="que-row">
+            <div class="col-sm-12 col-md-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Question</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">answer the question given below</h6>
+                        <p class="card-text" id="que-content">Click Play button  on top to start</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="ans-row">
+            <div class="col-sm-12 col-md-12">
+                <div class="card" style="width: 98%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Answer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Type Answer on your keyboard.</h6>
+                        <h1 class="card-text" id="ans-content">Click Play button  on top to start</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="score-row-1">
+            <div class="col-sm-12 col-md-4">
+                <div class="card" style="width: 75%">
+                    <div class="card-body">
+                        <h5 class="card-title">Runs scored</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Runs</h6>
+                        <h1 class="card-text" id="run-count">0</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card" style="width: 75%">
+                    <div class="card-body">
+                        <h5 class="card-title">Guesses remaining</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">guesses</h6>
+                        <p class="card-text" id="guess-count">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="score-row-2">
+            <div class="col-sm-12 col-md-4">
+                <div class="card" style="width: 75%">
+                    <div class="card-body">
+                        <h5 class="card-title">Letters already guessed</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">don't repeat this letters!</h6>
+                        <p class="card-text" id="guess-list"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card" style="width: 75%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Strikes</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">total strikes</h6>
+                        <h1 class="card-text" id="strike-count">0</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="message-row">
+            <div class="col-sm-12 col-md-12">
+                <div class="card" style="width: 80%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Message</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Important Message!</h6>
+                        <h1 class="card-text" id="msg-content"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container" id="footer">
+            <p class="text-muted">&copy; Arpit Shukla</p>
+        </div>
+    </footer>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
