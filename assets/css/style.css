@@ -1,5 +1,6 @@
 .jumbotron {
     background-color: #CC8B16;
+    height: 900px;
 }
 
 #restart-button {
@@ -16,6 +17,10 @@
 
 #score-row-2 .col-md-4 {
     margin: 2rem auto;
+}
+
+#intro-text{
+    z-index: 1000;
 }
 
 #que-row {

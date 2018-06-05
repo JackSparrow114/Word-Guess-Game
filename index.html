@@ -9,18 +9,38 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/baseball.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
 <body>
     <div class="header">
         <div class="jumbotron">
-            <h1 class="display-4">Hello, Friend!</h1>
-            <p class="lead">Welcome to the baseball trivia question page!</p>
-            <hr class="my-4">
-            <p>You will be asked few questions about baseball game and If you answer correctly, You will score runs! If your answer is wrong, It's a strike! Three strikes and you are out! Be alert for the curve balls coming your way! Click on Play button and get started!</p>
-            <a class="btn btn-primary btn-lg" href="#container" role="button" id="play-button">Play!</a>
-            <a class="btn btn-primary btn-lg" href="#container" role="button" id="restart-button">Restart!</a>
+            <div id="stadium">
+                <div id="field" class="mowed-grass"></div>
+                <div id="in-field">
+                    <h1>This is a baseball trivia game! Click play to start!</h1>
+                </div>
+                <div id="in-field-grass" class="mowed-grass"></div>
+                <div id="batting-circle"></div>
+                <div id="first-base" class="base"></div>
+                <div id="second-base" class="base"></div>
+                <div id="thrid-base" class="base"></div>
+                <div id="home-plate"></div>
+                <div id="base-lines"></div>
+                <div id="pitchers-mound"></div>
+                <div id="pitchers-plate"></div>
+                <div id="first-circle" class="half-circle"></div>
+                <div id="second-circle" class="half-circle"></div>
+                <div id="third-circle" class="half-circle"></div>
+                <div id="batters-box-right" class="batters-box"></div>
+                <div id="batters-box-left" class="batters-box"></div>
+                <div id="first-base-thing"></div>
+            </div>
+            <div id="intro-text">
+                <a class="btn btn-primary btn-lg" href="#container" role="button" id="play-button">Play!</a>
+                <a class="btn btn-primary btn-lg" href="#container" role="button" id="restart-button">Restart!</a>
+            </div>
         </div>
     </div>
     <div class="container" id="container">
