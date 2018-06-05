@@ -32,9 +32,9 @@ var answer9 = "2";
 var answer10 = "1";
 var answer11 = "Jimmy";
 
-var questions = [question1, question2, question3, question4];
-var answers = [answer1, answer2, answer3, answer4];
-var fixAnswers = [fixAnswer1, fixAnswer2, fixAnswer3, fixAnswer4]
+var questions = [question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11];
+var answers = [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11];
+var fixAnswers = [fixAnswer1, fixAnswer2, fixAnswer3, fixAnswer4, fixAnswer5, fixAnswer6, fixAnswer7, fixAnswer8, fixAnswer9, fixAnswer10, fixAnswer11];
 var counter = 0;
 var displayAnswer = '';
 var currentAnswer = '';
@@ -117,8 +117,8 @@ document.getElementById("play-button").onclick = function() {
 };
 
 function hardReset() {
-    questions = [question1,question2,question3,question4];
-    answers = [answer1,answer2,answer3,answer4];
+    questions = [question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11];
+    answers = [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11];
     counter = 0;
     displayAnswer = '';
     currentAnswer = '';
